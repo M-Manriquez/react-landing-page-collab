@@ -1,9 +1,10 @@
+import PropTypes from "prop-types";
 
 const Card = (props) => {
     return (
-        <>
-            <div className="card m-5" style={{ width: "18rem" }}>
-                <img className="card-img-top" src={props.image} alt="Card image cap" />
+        <div className="flex-row">
+            <div className="card" style={{ width: "18rem" }}>
+                <img className="card-img-top img-fluid " style={{ width: "500px", height: "500px", objectFit: "cover" }} src={props.image} alt="Card image cap" />
                 <div className="card-body">
                     <h5 className="card-title">{props.title}</h5>
 
@@ -20,7 +21,7 @@ const Card = (props) => {
 
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

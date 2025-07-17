@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const Navbar = (props) => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">
       <div className="container">
         <a href="" className="navbar-brand fw-bold">
           {props.brandname}
@@ -48,11 +48,6 @@ const Navbar = (props) => {
 };
 
 Navbar.propTypes = {
-  brandlink: PropTypes.string,
   brandname: PropTypes.string,
-  navlink1: PropTypes.string,
-  navlink2: PropTypes.string,
-  navlink3: PropTypes.string,
-  navlink4: PropTypes.string,
 };
 export default Navbar;
