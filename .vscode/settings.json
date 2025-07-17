@@ -6,5 +6,8 @@
   },
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 700,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }
