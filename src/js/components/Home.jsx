@@ -1,9 +1,9 @@
 import React from "react";
-
+import Navbar from "./Navbar";
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
-import contentCard from "./card.jsx";
+import contentCard from "./Card.jsx";
 
 //create your first component
 const Home = () => {
@@ -11,12 +11,6 @@ const Home = () => {
     <div className="container">
       <NavBar />
       <Jumbotrone />
-      <Card
-	  image= "https://media.vogue.es/photos/64afd0d243d251bcd59d0a41/master/w_1920%2Cc_limit/GettyImages-1465354523.jpg"
-	  imageAlt= "Coco Chanel"
-	  title= "Su camelia en honor a Coco Chanel"
-	  description="Para acudir a los BRIT Awards 2023 el cantante se decantó por un esmoquín firmado por Nina Ricci. Los pantalones eran corte acampanado y la silueta de la americana no dejaba de recordar al femenino new look de Dior. Se ajustaba a la cintura y nacía en forma de a hasta la cadera."
-	  />
     </div>
   );
 };

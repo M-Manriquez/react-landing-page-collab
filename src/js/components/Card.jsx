@@ -1,5 +1,5 @@
 
-const contentCard = (props) => {
+const Card = (props) => {
     return (
         <>
             <div className="card m-5" style={{ width: "18rem" }}>
@@ -24,11 +24,11 @@ const contentCard = (props) => {
     );
 };
 
-contentCard.propTypes = {
+Card.propTypes = {
 image: PropTypes.string,
 imageAlt: PropTypes.string,
 title: PropTypes.string,
 descrption: PropTypes.string
 }
 
-export default contentCard;
+export default Card;
