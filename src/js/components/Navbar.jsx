@@ -4,11 +4,11 @@ const Navbar = (props) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
       <div className="container">
-        <a href={props.brandlink} className="navbar-brand fw-bold">
+        <a href="" className="navbar-brand fw-bold">
           {props.brandname}
         </a>
         <button
-          class="navbar-toggler ms-auto"
+          className="navbar-toggler ms-auto"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -16,21 +16,29 @@ const Navbar = (props) => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ms-lg-auto text-white">
-            <li>
-              <a href={props.navlink1}>Home</a>
+          <ul className="navbar-nav ms-auto text-white fw-semibold">
+            <li className="nav-item">
+              <a href="" className="nav-link">
+                Home
+              </a>
             </li>
-            <li>
-              <a href={props.navlink2}>About</a>
+            <li className="nav-item">
+              <a href="" className="nav-link">
+                About
+              </a>
             </li>
-            <li>
-              <a href={props.navlink3}>Services</a>
+            <li className="nav-item">
+              <a href="" className="nav-link">
+                Services
+              </a>
             </li>
-            <li>
-              <a href={props.navlink4}>Contact</a>
+            <li className="nav-item">
+              <a href="" className="nav-link">
+                Contact
+              </a>
             </li>
           </ul>
         </div>
@@ -39,7 +47,7 @@ const Navbar = (props) => {
   );
 };
 
-Navbar.PropTypes = {
+Navbar.propTypes = {
   brandlink: PropTypes.string,
   brandname: PropTypes.string,
   navlink1: PropTypes.string,
