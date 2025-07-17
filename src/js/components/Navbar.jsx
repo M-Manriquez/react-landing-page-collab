@@ -48,11 +48,6 @@ const Navbar = (props) => {
 };
 
 Navbar.propTypes = {
-  brandlink: PropTypes.string,
   brandname: PropTypes.string,
-  navlink1: PropTypes.string,
-  navlink2: PropTypes.string,
-  navlink3: PropTypes.string,
-  navlink4: PropTypes.string,
 };
 export default Navbar;

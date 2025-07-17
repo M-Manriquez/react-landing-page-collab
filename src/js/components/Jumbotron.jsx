@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Jumbotron = (props) => {
   return (
     <div className="pt-4 p-3">
@@ -10,6 +12,11 @@ const Jumbotron = (props) => {
       </div>
     </div>
   );
+};
+
+Jumbotron.propTypes = {
+  title: PropTypes.string,
+  text: PropTypes.string,
 };
 
 export default Jumbotron;
