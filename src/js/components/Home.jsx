@@ -3,13 +3,20 @@ import React from "react";
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
+import contentCard from "./card.jsx";
+
 //create your first component
 const Home = () => {
   return (
     <div className="container">
       <NavBar />
       <Jumbotrone />
-      <Card />
+      <Card
+	  image= "https://media.vogue.es/photos/64afd0d243d251bcd59d0a41/master/w_1920%2Cc_limit/GettyImages-1465354523.jpg"
+	  imageAlt= "Coco Chanel"
+	  title= "Su camelia en honor a Coco Chanel"
+	  description="Para acudir a los BRIT Awards 2023 el cantante se decantó por un esmoquín firmado por Nina Ricci. Los pantalones eran corte acampanado y la silueta de la americana no dejaba de recordar al femenino new look de Dior. Se ajustaba a la cintura y nacía en forma de a hasta la cadera."
+	  />
     </div>
   );
 };
@@ -31,68 +38,6 @@ const data = {
 	cardDescription4:"En su actuación en los Grammy 2023 volvió a confiar en la misma firma que le creó el mono para la alfombra roja, EGONLAB en colaboración con Swarovski. Se trató de un mono de flecos y lentejuelas que presentó la marca en su colección masculina de otoño-invierno 2024.",
 };
 
-let content = (
-	<>
-		<div className="card1 m-5" style={{ width: "18rem" }}>
-			<img className="card-img-top" src={data.image1} alt="Card image cap" />
-			<div className="card-body">
-				<h5 className="card-title">{data.cardTitle1}</h5>
-				
-					<p className="d-inline-flex gap-1">
-					<a className="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-						Read more
-					</a>
-					</p>
-					<div className="collapse" id="collapseExample">
-					<div className="card card-body">
-						<p className="card-text">{data.cardDescription1}</p>
-					</div>
-					</div>
 
-			</div>
-		</div>
-
-		<div className="card2 m-5" style={{ width: "18rem" }}>
-			<img className="card-img-top" src={data.image2} alt="Card image cap" />
-			<div className="card-body">
-				<h5 className="card-title">{data.cardTitle2}</h5>
-				
-					<p className="d-inline-flex gap-1">
-					<a className="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-						Read more
-					</a>
-					</p>
-					<div className="collapse" id="collapseExample">
-					<div className="card card-body">
-						<p className="card-text">{data.cardDescription2}</p>
-					</div>
-					</div>
-
-			</div>
-		</div>
-
-		<div className="card3 m-5" style={{ width: "18rem" }}>
-			<img className="card-img-top" src={data.image2} alt="Card image cap" />
-			<div className="card-body">
-				<h5 className="card-title">{data.cardTitle2}</h5>
-				
-					<p className="d-inline-flex gap-1">
-					<a className="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-						Read more
-					</a>
-					</p>
-					<div className="collapse" id="collapseExample">
-					<div className="card card-body">
-						<p className="card-text">{data.cardDescription2}</p>
-					</div>
-					</div>
-
-			</div>
-		</div>
-	</>
-	
-	
-
-);
 
 export default Home;
